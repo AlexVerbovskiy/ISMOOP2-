@@ -1,0 +1,98 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ConsoleApp1/1.0.0": {
+        "dependencies": {
+          "lib1": "1.0.0",
+          "lib2": "1.0.0",
+          "lib3": "1.0.0",
+          "lib4": "1.0.0",
+          "lib5": "1.0.0"
+        },
+        "runtime": {
+          "ConsoleApp1.dll": {}
+        }
+      },
+      "lib1/1.0.0": {
+        "runtime": {
+          "lib1.dll": {}
+        }
+      },
+      "lib2/1.0.0": {
+        "dependencies": {
+          "lib1": "1.0.0"
+        },
+        "runtime": {
+          "lib2.dll": {}
+        }
+      },
+      "lib3/1.0.0": {
+        "dependencies": {
+          "lib1": "1.0.0",
+          "lib2": "1.0.0",
+          "lib4": "1.0.0"
+        },
+        "runtime": {
+          "lib3.dll": {}
+        }
+      },
+      "lib4/1.0.0": {
+        "dependencies": {
+          "lib1": "1.0.0",
+          "lib2": "1.0.0"
+        },
+        "runtime": {
+          "lib4.dll": {}
+        }
+      },
+      "lib5/1.0.0": {
+        "dependencies": {
+          "lib1": "1.0.0",
+          "lib2": "1.0.0",
+          "lib3": "1.0.0",
+          "lib4": "1.0.0"
+        },
+        "runtime": {
+          "lib5.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleApp1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "lib1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "lib2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "lib3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "lib4/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "lib5/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

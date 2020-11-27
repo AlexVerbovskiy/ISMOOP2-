@@ -1,0 +1,184 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "lib1/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/lib1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/lib1.dll": {}
+        }
+      },
+      "lib2/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "lib1": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/lib2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/lib2.dll": {}
+        }
+      },
+      "lib3/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "lib1": "1.0.0",
+          "lib2": "1.0.0",
+          "lib4": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/lib3.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/lib3.dll": {}
+        }
+      },
+      "lib4/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "lib1": "1.0.0",
+          "lib2": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/lib4.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/lib4.dll": {}
+        }
+      },
+      "lib5/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "lib1": "1.0.0",
+          "lib2": "1.0.0",
+          "lib3": "1.0.0",
+          "lib4": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/lib5.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/lib5.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "lib1/1.0.0": {
+      "type": "project",
+      "path": "../lib1/lib1.csproj",
+      "msbuildProject": "../lib1/lib1.csproj"
+    },
+    "lib2/1.0.0": {
+      "type": "project",
+      "path": "../lib2/lib2.csproj",
+      "msbuildProject": "../lib2/lib2.csproj"
+    },
+    "lib3/1.0.0": {
+      "type": "project",
+      "path": "../lib4/lib3.csproj",
+      "msbuildProject": "../lib4/lib3.csproj"
+    },
+    "lib4/1.0.0": {
+      "type": "project",
+      "path": "../lib3/lib4.csproj",
+      "msbuildProject": "../lib3/lib4.csproj"
+    },
+    "lib5/1.0.0": {
+      "type": "project",
+      "path": "../lib5/lib5.csproj",
+      "msbuildProject": "../lib5/lib5.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "lib1 >= 1.0.0",
+      "lib2 >= 1.0.0",
+      "lib3 >= 1.0.0",
+      "lib4 >= 1.0.0",
+      "lib5 >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\cofee\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\cofee\\source\\repos\\OOP2\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectName": "ConsoleApp1",
+      "projectPath": "C:\\Users\\cofee\\source\\repos\\OOP2\\ConsoleApp1\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\cofee\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cofee\\source\\repos\\OOP2\\ConsoleApp1\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\cofee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\cofee\\source\\repos\\OOP2\\lib1\\lib1.csproj": {
+              "projectPath": "C:\\Users\\cofee\\source\\repos\\OOP2\\lib1\\lib1.csproj"
+            },
+            "C:\\Users\\cofee\\source\\repos\\OOP2\\lib2\\lib2.csproj": {
+              "projectPath": "C:\\Users\\cofee\\source\\repos\\OOP2\\lib2\\lib2.csproj"
+            },
+            "C:\\Users\\cofee\\source\\repos\\OOP2\\lib3\\lib4.csproj": {
+              "projectPath": "C:\\Users\\cofee\\source\\repos\\OOP2\\lib3\\lib4.csproj"
+            },
+            "C:\\Users\\cofee\\source\\repos\\OOP2\\lib4\\lib3.csproj": {
+              "projectPath": "C:\\Users\\cofee\\source\\repos\\OOP2\\lib4\\lib3.csproj"
+            },
+            "C:\\Users\\cofee\\source\\repos\\OOP2\\lib5\\lib5.csproj": {
+              "projectPath": "C:\\Users\\cofee\\source\\repos\\OOP2\\lib5\\lib5.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
